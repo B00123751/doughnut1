@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 21, 2021 at 08:42 PM
+-- Generation Time: May 23, 2021 at 06:32 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -11,16 +11,12 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
- 
-
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
-
 
 --
 -- Database: `test`
@@ -86,19 +82,19 @@ INSERT INTO `customerorders` (`id`, `orderby`, `orderstatus`, `items`, `address`
 (56, 'customer', 'Cancelled', 'Sprite_qty-1-1', '16 House, Some street, Some Town', '2021-04-20 20:28:19'),
 (57, 'customer', 'Delivered', 'Chocolate_qty-2-1', '16 House, Some street, Some Town', '2021-04-20 20:28:19'),
 (58, 'customer', 'Cancelled', 'Chocolate_qty-3-1', '16 House, Some street, Some Town', '2021-04-20 20:28:19'),
-(59, 'customer', 'PENDING', 'Chocolate_qty-2-1,Iced_qty-3-2', 'test address', '2021-04-07 20:28:19'),
-(60, 'customer', 'PENDING', 'Chocolate_qty-2-1', 'Test address', '2021-04-20 20:28:19'),
-(61, 'customer', 'PENDING', 'Chocolate_qty-3-1', 'ssss', '2021-04-20 20:28:19'),
-(62, 'customer', 'PENDING', 'Fanta_qty-1-1', 'Test address', '2021-04-20 20:28:19'),
-(63, 'customer', 'PENDING', 'Fanta_qty-1-1,Chocolate_qty-1-1,Jam_qty-4-2', 'Test address', '2021-04-20 20:28:19'),
-(64, 'customer', 'PENDING', 'Plain_qty-3-1,Sprite_qty-3-1', 'Test Address', '2021-04-20 20:28:19'),
+(59, 'customer', 'Delivered', 'Chocolate_qty-2-1,Iced_qty-3-2', 'test address', '2021-04-07 20:28:19'),
+(60, 'customer', 'Delivered', 'Chocolate_qty-2-1', 'Test address', '2021-04-20 20:28:19'),
+(61, 'customer', 'Cancelled', 'Chocolate_qty-3-1', 'ssss', '2021-04-20 20:28:19'),
+(62, 'customer', 'Delivered', 'Fanta_qty-1-1', 'Test address', '2021-04-20 20:28:19'),
+(63, 'customer', 'Cancelled', 'Fanta_qty-1-1,Chocolate_qty-1-1,Jam_qty-4-2', 'Test address', '2021-04-20 20:28:19'),
+(64, 'customer', 'Delivered', 'Plain_qty-3-1,Sprite_qty-3-1', 'Test Address', '2021-04-20 20:28:19'),
 (65, 'customer', 'Delivered', 'Chocolate_qty-2-1', 'test address', '2021-04-20 20:28:19'),
 (66, 'customer', 'Cancelled', 'Chocolate_qty-1-1,Jam_qty-3-2', 'Test address', '2021-04-20 20:28:19'),
-(68, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 20:48:10'),
-(69, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 20:50:33'),
-(70, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 20:52:45'),
-(71, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 20:52:56'),
-(72, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 20:53:17'),
+(68, 'customer', 'Cancelled', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 20:48:10'),
+(69, 'customer2', 'Delivered', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 20:50:33'),
+(70, 'customer', 'Cancelled', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 20:52:45'),
+(71, 'customer2', 'Delivered', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 20:52:56'),
+(72, 'customer', 'Cancelled', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 20:53:17'),
 (73, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 20:53:28'),
 (74, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 21:01:06'),
 (75, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 21:01:17'),
@@ -110,7 +106,21 @@ INSERT INTO `customerorders` (`id`, `orderby`, `orderstatus`, `items`, `address`
 (81, 'customer', 'PENDING', 'Chocolate_qty-1-1,Plain_qty-1-1', 'Test Address', '2021-04-21 21:10:59'),
 (82, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-21 21:11:50'),
 (83, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-21 21:12:49'),
-(85, 'customer', 'PENDING', 'Jam_qty-1-2,Sprite_qty-3-1', 'test address', '2021-04-21 21:39:56');
+(85, 'customer', 'PENDING', 'Jam_qty-1-2,Sprite_qty-3-1', 'test address', '2021-04-21 21:39:56'),
+(86, 'customer', 'PENDING', 'Plain_qty-1-1', 'Test Address', '2021-04-21 21:49:17'),
+(87, 'customer', 'PENDING', 'Chocolate_qty-1-1,Plain_qty-1-1', 'Test Address', '2021-04-21 22:12:13'),
+(88, 'customer', 'PENDING', 'Fanta_qty-2-1', 'Test Address', '2021-04-22 21:36:34'),
+(89, 'customer', 'PENDING', 'Chocolate_qty-1-1,Plain_qty-1-1', 'Test Address', '2021-04-22 21:53:11'),
+(90, 'customer', 'PENDING', 'Chocolate_qty-1-1', 'Test Address', '2021-04-24 08:30:52'),
+(91, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-24 09:12:31'),
+(92, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-24 09:12:45'),
+(93, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-24 09:13:28'),
+(94, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-24 09:13:40'),
+(95, 'customer', 'PENDING', 'Plain_qty-1-1,Jam_qty-3-2', 'Test Address', '2021-04-24 09:53:06'),
+(96, 'customer2', 'PENDING', 'Plain_qty-1-1,Jam_qty-1-2,Fanta_qty-2-1', 'Test Address', '2021-04-24 09:53:44'),
+(97, 'customer', 'PENDING', 'Lemon_qty-2-1', 'Test Address', '2021-04-24 10:31:49'),
+(98, 'customer', 'PENDING', 'Lemon_qty-2-1', 'Test Address', '2021-04-24 11:04:51'),
+(99, 'customer', 'PENDING', 'Chocolate_qty-1-1,Plain_qty-1-1', 'test add', '2021-05-19 21:36:50');
 
 -- --------------------------------------------------------
 
@@ -131,6 +141,47 @@ CREATE TABLE `feedback` (
 CREATE TABLE `feedbacktext` (
   `feedbacktext` varchar(90) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orderrev`
+--
+
+CREATE TABLE `orderrev` (
+  `id` int(11) NOT NULL,
+  `rev` int(11) NOT NULL DEFAULT '0',
+  `ordergroup` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `orderrev`
+--
+
+INSERT INTO `orderrev` (`id`, `rev`, `ordergroup`) VALUES
+(1, 10, 'Ashbourne'),
+(2, 20, 'Arrigal'),
+(3, 100, 'Athronan'),
+(4, 30, 'Ballastran'),
+(5, 40, 'Balbrigh'),
+(6, 6, 'Ballastran'),
+(7, 4, 'Ballyhack'),
+(8, 14, 'Ballymore'),
+(9, 20, 'Garristown'),
+(10, 20, 'Ballynare'),
+(11, 14, 'Baltrasna'),
+(12, 12, 'Belpere'),
+(13, 10, 'Bective'),
+(14, 8, 'Dangan'),
+(15, 4, 'Belpere'),
+(16, 2, 'Drissoge'),
+(17, 15, 'Boolies'),
+(18, 200, 'Carranstown'),
+(19, 8, 'Emlagh'),
+(20, 2, 'Chapel Land'),
+(21, 4, 'Clonmore'),
+(22, 5, 'Cornelstown'),
+(23, 1, 'Curraghtown');
 
 -- --------------------------------------------------------
 
@@ -206,7 +257,15 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `acctype`, `address`
 (29, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
 (30, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
 (31, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
-(32, 'customer2', 'customer2@customer.ie', '1', 'customer', '0');
+(32, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
+(33, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
+(34, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
+(35, 'customer2', 'customer2@customer.ie', '1', 'customer', '0'),
+(36, 'testcustomer', 'test@domain.com', '1', 'customer', '0'),
+(37, 'ddd', 'dd@@', '1', 'customer', '0'),
+(38, '&lt;script&gt;', 'ss@ss.ie', '1', 'customer', '0'),
+(39, '  &lt;script&gt; &lt;&#x2F;script&gt;', 'ss@vv.vv', '1', 'customer', '0'),
+(40, '  &lt;script&gt;    &lt;&#x2F;script&gt;', 'AA@vv.vv', '1', 'customer', '0');
 
 --
 -- Indexes for dumped tables
@@ -217,6 +276,12 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `acctype`, `address`
 --
 ALTER TABLE `customerorders`
   ADD PRIMARY KEY (`id`) USING BTREE;
+
+--
+-- Indexes for table `orderrev`
+--
+ALTER TABLE `orderrev`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `products`
@@ -238,7 +303,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `customerorders`
 --
 ALTER TABLE `customerorders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+
+--
+-- AUTO_INCREMENT for table `orderrev`
+--
+ALTER TABLE `orderrev`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -250,7 +321,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
